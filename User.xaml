@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Air.User">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame HeightRequest="50">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Airon" TextColor="Black" FontFamily="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="20" Margin="15, 0, 0, 0"/>
+                        <Label Text="👤" HorizontalOptions="End" VerticalOptions="CenterAndExpand" FontSize="15">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+                </Frame>
+                <Label Text="Hello," TextColor="Black" FontFamily="Medium" FontSize="15" Padding="30, 30, 0, 0"/>
+                <Label Text="How are you doing today?" TextColor="Black" FontFamily="Bold" FontSize="20" Margin="30, -5, 0, 0"/>
+
+                <Frame CornerRadius="10" HeightRequest="100" Margin="30" HasShadow="False" BackgroundColor="#ddeee4">
+                    <StackLayout>
+                        <Label Text="Start helping in your area!" TextColor="Black" FontFamily="Bold" FontSize="18" Margin="5, 0, 0, 0"/>
+                        <Label Text="You can start by entering your ride and allowing others to carpool with you to save the air from car pollution." TextColor="Black" FontFamily="Medium" FontSize="14" Margin="5, 0, 0, 0"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="40" HeightRequest="10" Margin="40, -60, 150, 0" BackgroundColor="#9dbfab" IsClippedToBounds="False">
+                    <Label Text="📌  Start Entering!" TextColor="Black" FontFamily="Bold" FontSize="15" Margin="5, -9, 0, 0"/>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <Frame CornerRadius="10" HeightRequest="100" Margin="30" HasShadow="False" BackgroundColor="#dde7ed">
+                    <StackLayout>
+                        <Label Text="Start locating in your area!" TextColor="Black" FontFamily="Bold" FontSize="18" Margin="5, 0, 0, 0"/>
+                        <Label Text="You can start by looking for an available ride in your local district and boarding along with the host and others." TextColor="Black" FontFamily="Medium" FontSize="14" Margin="5, 0, 0, 0"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="40" HeightRequest="10" Margin="40, -60, 150, 0" BackgroundColor="#9db2bf" IsClippedToBounds="False">
+                    <Label Text="📌  Start Locating!" TextColor="Black" FontFamily="Bold" FontSize="15" Margin="5, -9, 0, 0"/>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <Frame CornerRadius="10" HeightRequest="100" Margin="30" HasShadow="False" BackgroundColor="#eddddd">
+                    <StackLayout>
+                        <Label Text="Visit the shop to redeem!" TextColor="Black" FontFamily="Bold" FontSize="18" Margin="5, 0, 0, 0"/>
+                        <Label Text="You can start looking at the shop where 100 - 250 Airons can to traded for gift cards of your favorite companies." TextColor="Black" FontFamily="Medium" FontSize="14" Margin="5, 0, 0, 0"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="40" HeightRequest="10" Margin="40, -60, 150, 0" BackgroundColor="#bf9d9d" IsClippedToBounds="False">
+                    <Label Text="📌  Go to the Store!" TextColor="Black" FontFamily="Bold" FontSize="15" Margin="5, -9, 0, 0"/>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <Label Text="Rides in your area" TextColor="Black" FontFamily="Bold" FontSize="20" Padding="30, 30, 0, 0"/>
+
+                <ScrollView Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame CornerRadius="10" HeightRequest="100" WidthRequest="150" Margin="30, 30, 0, 30" HasShadow="False" BackgroundColor="#eddded" IsClippedToBounds="True">
+                            <StackLayout>
+                                <Label Text="Local Event" TextColor="Black" FontFamily="Bold" FontSize="18" Margin="5, 0, 0, 0"/>
+                                <Label Text="🚗  Departure" TextColor="Black" FontFamily="Medium" FontSize="14" Margin="5, 0, 0, 0"/>
+                                <Label Text="7:00 PM" TextColor="Black" FontFamily="Medium" FontSize="14" Margin="5, 0, 0, 0"/>
+                                <Label Text="From Toronto ON" TextColor="Black" FontFamily="Medium" FontSize="14" Margin="5, 0, 0, 0"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame CornerRadius="10" HeightRequest="100" WidthRequest="150" Margin="20, 30, 30, 30" HasShadow="False" BackgroundColor="#eddded">
+                            <StackLayout>
+                                <Label Text="Local Event" TextColor="Black" FontFamily="Bold" FontSize="18" Margin="5, 0, 0, 0"/>
+                                <Label Text="🚙  Departure" TextColor="Black" FontFamily="Medium" FontSize="14" Margin="5, 0, 0, 0"/>
+                                <Label Text="12:00 PM" TextColor="Black" FontFamily="Medium" FontSize="14" Margin="5, 0, 0, 0"/>
+                                <Label Text="From Toronto ON" TextColor="Black" FontFamily="Medium" FontSize="14" Margin="5, 0, 0, 0"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </ScrollView>
+              
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

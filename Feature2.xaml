@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Air.Feature2">
+    <StackLayout>
+        <StackLayout.Background>
+            <LinearGradientBrush EndPoint="1, 1">
+                <GradientStop Color="#a06666"
+                              Offset="0.1"/>
+
+                <GradientStop Color="#fff"
+                              Offset="0.8"/>
+
+            </LinearGradientBrush>
+        </StackLayout.Background>
+
+        <StackLayout.GestureRecognizers>
+            <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Swiped"/>
+        </StackLayout.GestureRecognizers>
+
+        <Label Text="Receive!" FontFamily="Bold" TextColor="Black" FontSize="30" Margin="0, 50, 30, 0" HorizontalOptions="EndAndExpand"/>
+        <Label Text="Receive Airons" FontFamily="Medium" TextColor="#6b6b6b" FontSize="15" Margin="0, 20, 30, 0" HorizontalOptions="EndAndExpand"/>
+        <Label Text="as a prize." FontFamily="Medium" TextColor="#6b6b6b" FontSize="15"  Margin="0, 0, 30, 0" HorizontalOptions="EndAndExpand"/>
+
+        <Label Text="Swipe →" FontFamily="Medium" TextColor="#a06666" HorizontalOptions="EndAndExpand" FontSize="15" Margin="0, 150, 30, 0"/>
+
+        <Image Source="red.png" HeightRequest="350" HorizontalOptions="Start" RotationY="180" Aspect="AspectFill" Margin="-300, -400, 50, 50"/>
+        <Image Source="red.png" HeightRequest="350" HorizontalOptions="Start" RotationY="0" Aspect="AspectFill" Margin="-300, -70, 50, 50"/>
+        <Image Source="red.png" HeightRequest="350" HorizontalOptions="Start" RotationY="180" Aspect="AspectFill" Margin="-300, -80, 50, 50"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0, -320, 0, 0">
+            <Frame HeightRequest="10" WidthRequest="10" HorizontalOptions="Center" HasShadow="False" Padding="0">
+                <Ellipse HeightRequest="10" WidthRequest="10" HorizontalOptions="Start">
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="#eddddd"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Frame>
+            <Frame HeightRequest="10" WidthRequest="10" HorizontalOptions="Center" HasShadow="False" Padding="0">
+                <Ellipse HeightRequest="10" WidthRequest="10" HorizontalOptions="Start">
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="#eddddd"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Frame>
+            <Frame HeightRequest="10" WidthRequest="10" HorizontalOptions="Center" HasShadow="False" Padding="0">
+                <Ellipse HeightRequest="10" WidthRequest="10" HorizontalOptions="Start">
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="#a06666"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Frame>
+            <Frame HeightRequest="10" WidthRequest="10" HorizontalOptions="Center" HasShadow="False" Padding="0">
+                <Ellipse HeightRequest="10" WidthRequest="10" HorizontalOptions="Start">
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="#eddddd"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Frame>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

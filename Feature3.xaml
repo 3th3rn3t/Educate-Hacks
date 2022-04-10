@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Air.Feature3">
+    <StackLayout>
+        <StackLayout.Background>
+            <LinearGradientBrush EndPoint="1, 1">
+                <GradientStop Color="#9f66a0"
+                              Offset="0.1"/>
+
+                <GradientStop Color="#fff"
+                              Offset="0.8"/>
+
+            </LinearGradientBrush>
+        </StackLayout.Background>
+
+        <StackLayout.GestureRecognizers>
+            <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Swiped"/>
+        </StackLayout.GestureRecognizers>
+
+        <Label Text="Redeem!" FontFamily="Bold" TextColor="Black" FontSize="30" Margin="0, 50, 30, 0" HorizontalOptions="EndAndExpand"/>
+        <Label Text="Once enough, Airons can" FontFamily="Medium" TextColor="#6b6b6b" FontSize="15" Margin="0, 20, 30, 0" HorizontalOptions="EndAndExpand"/>
+        <Label Text="be converted to gift cards." FontFamily="Medium" TextColor="#6b6b6b" FontSize="15"  Margin="00, 0, 30, 0" HorizontalOptions="EndAndExpand"/>
+
+        <Label Text="Swipe →" FontFamily="Medium" TextColor="#9f66a0" HorizontalOptions="EndAndExpand" FontSize="15" Margin="0, 150, 30, 0"/>
+
+        <Image Source="purple.png" HeightRequest="350" HorizontalOptions="Start" RotationY="180" Aspect="AspectFill" Margin="-140, 130, 50, 50"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0, -180, 0, 0">
+            <Frame HeightRequest="10" WidthRequest="10" HorizontalOptions="Center" HasShadow="False" Padding="0">
+                <Ellipse HeightRequest="10" WidthRequest="10" HorizontalOptions="Start">
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="#eddded"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Frame>
+            <Frame HeightRequest="10" WidthRequest="10" HorizontalOptions="Center" HasShadow="False" Padding="0">
+                <Ellipse HeightRequest="10" WidthRequest="10" HorizontalOptions="Start">
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="#eddded"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Frame>
+            <Frame HeightRequest="10" WidthRequest="10" HorizontalOptions="Center" HasShadow="False" Padding="0">
+                <Ellipse HeightRequest="10" WidthRequest="10" HorizontalOptions="Start">
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="#eddded"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Frame>
+            <Frame HeightRequest="10" WidthRequest="10" HorizontalOptions="Center" HasShadow="False" Padding="0">
+                <Ellipse HeightRequest="10" WidthRequest="10" HorizontalOptions="Start">
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="#9f66a0"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Frame>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

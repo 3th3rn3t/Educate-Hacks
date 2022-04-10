@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Air.Find">
+    <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" Source="maps.png" Aspect="AspectFill"/>
+        <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,1,1,1">
+            <Frame BackgroundColor="#bf9d9d" CornerRadius="20" WidthRequest="10" HeightRequest="10" HorizontalOptions="CenterAndExpand" Margin="0, 175, 0, 0" IsClippedToBounds="True">
+                <Label Text="1" TextColor="White" FontSize="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+            <Frame VerticalOptions="EndAndExpand" Margin="0, 0, 0, 0" HasShadow="False" HeightRequest="300" CornerRadius="30">
+                <StackLayout Orientation="Horizontal">
+                    <Frame Margin="0, 30, 0, 30" WidthRequest="150" HorizontalOptions="StartAndExpand" HasShadow="False" BackgroundColor="#9dbfab" CornerRadius="20">
+                        <StackLayout>
+                            <Frame CornerRadius="20" HasShadow="False" WidthRequest="20" HeightRequest="20" HorizontalOptions="StartAndExpand" Margin="0, 20, 0, 0" BackgroundColor="#738c7d">
+                                <Label Text="🔎" TextColor="White" FontSize="15"/>
+                            </Frame>
+                            <Label TextDecorations="None" Text="Get Me Somewhere" TextColor="White" FontFamily="Medium" FontSize="20" VerticalOptions="EndAndExpand" Margin="0, 0, 0, 20"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="0, 30, 0, 30" WidthRequest="100" HorizontalOptions="StartAndExpand" HasShadow="False" BackgroundColor="#9db2bf" CornerRadius="20">
+                        <StackLayout>
+                            <Frame CornerRadius="20" HasShadow="False" WidthRequest="20" HeightRequest="20" HorizontalOptions="StartAndExpand" Margin="0, 20, 0, 0" BackgroundColor="#73828c">
+                                <Label Text="📌" TextColor="White" FontSize="15"/>
+                            </Frame>
+                            <Label TextDecorations="None" Text="Saved Places" TextColor="White" FontFamily="Medium" FontSize="20" VerticalOptions="EndAndExpand" Margin="0, 0, 0, 20"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                
+            </Frame>
+            <Frame VerticalOptions="EndAndExpand" Margin="0, -235, 0, 0"/>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

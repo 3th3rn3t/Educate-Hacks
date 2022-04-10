@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Fonts\Bold.otf" />
+    <None Remove="Resources\Fonts\ExtraBold.otf" />
+    <None Remove="Resources\Fonts\Heavy.otf" />
+    <None Remove="Resources\Fonts\Light.otf" />
+    <None Remove="Resources\Fonts\Medium.otf" />
+    <None Remove="Resources\Fonts\Regular.otf" />
+    <None Remove="Resources\Fonts\SemiBold.otf" />
+    <None Remove="Resources\Fonts\Thin.otf" />
+    <None Remove="Resources\Fonts\UltraLight.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fonts\Bold.otf" />
+    <EmbeddedResource Include="Resources\Fonts\ExtraBold.otf" />
+    <EmbeddedResource Include="Resources\Fonts\Heavy.otf" />
+    <EmbeddedResource Include="Resources\Fonts\Light.otf" />
+    <EmbeddedResource Include="Resources\Fonts\Medium.otf" />
+    <EmbeddedResource Include="Resources\Fonts\Regular.otf" />
+    <EmbeddedResource Include="Resources\Fonts\SemiBold.otf" />
+    <EmbeddedResource Include="Resources\Fonts\Thin.otf" />
+    <EmbeddedResource Include="Resources\Fonts\UltraLight.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Book.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Feature1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Feature2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Feature3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Find.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Make.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Profile.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Redeem.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Shop.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Start.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Unbook.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Unhost.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="User.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

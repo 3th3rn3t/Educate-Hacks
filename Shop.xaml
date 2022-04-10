@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Air.Shop">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame HeightRequest="50">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Shop" TextColor="Black" FontFamily="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="20"/>
+                </StackLayout>
+            </Frame>
+
+            <Label Text="Gift Cards" TextColor="Black" FontFamily="Bold" FontSize="25" Margin="30, 30, 0, 0"/>
+            <Label Text="* This shop offers only gift cards from select companies" TextColor="Gray" FontFamily="Medium" FontSize="10" Padding="30, 5, 0, 0"/>
+
+            <Label Margin="30, 30, 0, 0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Products" TextColor="Black" FontFamily="Bold" FontSize="20" />
+                        <Span Text="  1" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+
+            <Frame Margin="30, 10, 150, 0" CornerRadius="10" HeightRequest="100" BackgroundColor="Black" HasShadow="False">
+                <Image Source="amazon.png" Aspect="AspectFit"/>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Label Text="$25 Amazon Gift Card" FontSize="12" FontFamily="Medium" TextColor="Black" Margin="30, 5, 0, 0"/>
+            <Label Text="250 Airons" FontSize="12" FontFamily="Medium" TextColor="Gray" Margin="30, 0, 0, 0"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xct:Popup xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             Size="300, 300"
+             xct:CornerRadiusEffect.CornerRadius="50"
+             x:Class="Air.Start">
+
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <Label Text="Are You Sure?" HorizontalOptions="CenterAndExpand" FontSize="20" FontFamily="Bold" TextColor="Black" Margin="0, 20, 0, 0"/>
+        <Label Text="* Rides that are started can be cancelled" HorizontalOptions="Center" FontSize="10" FontFamily="Medium" TextColor="Gray" Margin="0, 10, 0, 0"/>
+        <Label Text="four hours prior to the departure time stated" HorizontalOptions="Center" FontSize="10" FontFamily="Medium" TextColor="Gray" Margin="0, -5, 0, 0"/>
+
+        <Entry Placeholder="Location" Margin="20, 20, 20, 0" FontFamily="Medium" FontSize="15"/>
+        <Entry Placeholder="Departure" Margin="20, 10, 20, 0" FontFamily="Medium" FontSize="15"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Button CornerRadius="10" WidthRequest="100" BackgroundColor="Gray" Margin="30, 20, 0, 0" Text="Cancel" TextColor="White" FontSize="15" FontFamily="Medium" Clicked="Cancel_Clicked"/>
+            <Button CornerRadius="10" WidthRequest="100" BackgroundColor="#9dbfab" Margin="20, 20, 30, 0" Text="Host" TextColor="White" FontSize="15" FontFamily="Medium" Clicked="Redeem_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</xct:Popup>    

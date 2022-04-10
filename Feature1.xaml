@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Air.Feature1">
+    <StackLayout>
+        <StackLayout.Background>
+            <LinearGradientBrush EndPoint="1, 1">
+                <GradientStop Color="#6689a0"
+                              Offset="0.1"/>
+
+                <GradientStop Color="#fff"
+                              Offset="0.8"/>
+
+            </LinearGradientBrush>
+        </StackLayout.Background>
+
+        <StackLayout.GestureRecognizers>
+            <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Swiped"/>
+        </StackLayout.GestureRecognizers>
+
+        <Image Source="blue.png" HeightRequest="600" HorizontalOptions="Start" RotationY="0" Aspect="AspectFill" Margin="0, -290, 0, 50"/>
+
+        <Label Text="Ride!" FontFamily="Bold" TextColor="Black" FontSize="30" Margin="0, 0, 30, 0" HorizontalOptions="EndAndExpand"/>
+        <Label Text="Ride with others" FontFamily="Medium" TextColor="#6b6b6b" FontSize="15" Margin="0, 20, 30, 0" HorizontalOptions="EndAndExpand"/>
+        <Label Text="to save the air." FontFamily="Medium" TextColor="#6b6b6b" FontSize="15"  Margin="0, 0, 30, 0" HorizontalOptions="EndAndExpand"/>
+
+        <Label Text="Swipe →" FontFamily="Medium" TextColor="#6689a0" HorizontalOptions="EndAndExpand" FontSize="15" Margin="0, 20, 30, 0"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0, 170, 0, 0">
+            <Frame HeightRequest="10" WidthRequest="10" HorizontalOptions="Center" HasShadow="False" Padding="0">
+                <Ellipse HeightRequest="10" WidthRequest="10" HorizontalOptions="Start">
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="#dde7ed"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Frame>
+            <Frame HeightRequest="10" WidthRequest="10" HorizontalOptions="Center" HasShadow="False" Padding="0">
+                <Ellipse HeightRequest="10" WidthRequest="10" HorizontalOptions="Start">
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="#6689a0"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Frame>
+            <Frame HeightRequest="10" WidthRequest="10" HorizontalOptions="Center" HasShadow="False" Padding="0">
+                <Ellipse HeightRequest="10" WidthRequest="10" HorizontalOptions="Start">
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="#dde7ed"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Frame>
+            <Frame HeightRequest="10" WidthRequest="10" HorizontalOptions="Center" HasShadow="False" Padding="0">
+                <Ellipse HeightRequest="10" WidthRequest="10" HorizontalOptions="Start">
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="#dde7ed"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Frame>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
